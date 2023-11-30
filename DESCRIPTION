@@ -1,0 +1,21 @@
+Package: cbart
+Type: Package
+Title: Gaussian Process Bayesian Additive Regression Trees
+Version: 0.1
+Date: 2021-03-11
+Authors@R: c(person('Robert', 'McCulloch', role='aut'),
+  person('Xuetao', 'Lu', role=c('aut', 'cre'), 
+  email='lxtpvt@gmail.com'))
+Description: Gaussian Process Bayesian Additive Regression Trees (BART) For more information on GPBART, see Chipman, George and McCulloch (2010) <doi:10.1214/09-AOAS285>.
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Biarch: true
+Depends: 
+    R (>= 3.4.0)
+Imports: Rcpp (>= 0.12.0)
+LinkingTo:
+	Rcpp (>= 0.12.0),
+    RcppEigen (>= 0.3.3.3.0)
+SystemRequirements: GNU make

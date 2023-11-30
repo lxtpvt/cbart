@@ -1,0 +1,16 @@
+## With Rcpp 0.11.0 and later, we no longer need to set PKG_LIBS as there is
+## no user-facing library. The include path to headers is already set by R.
+#PKG_LIBS = -DRNG_Rmath -lRmath
+
+## With R 3.1.0 or later, you can uncomment the following line to tell R to 
+## enable compilation with C++11 (or even C++14) where available
+CXX_STD = CXX11
+
+
+DIR      = ~/Dropbox/Rob-Xuetao/Packages/
+STAN_DIR  = cmdstan/stan/lib/stan_math/lib/
+BOOST_DIR   =  $(DIR)$(STAN_DIR)boost_1.69.0
+LIBIGL_DIR  = $(DIR)libigl
+
+INC_DBART = -I $(BOOST_DIR) -I $(LIBIGL_DIR)/include
+PKG_CXXFLAGS = -I. $(INC_DBART)

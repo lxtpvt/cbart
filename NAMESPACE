@@ -1,0 +1,7 @@
+export(AR1Cov)
+export(cbart)
+export(maternCov)
+export(proposedMSE)
+export(rmvn)
+export(weightedSearchData)
+useDynLib(cbart, .registration = TRUE)
